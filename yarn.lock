@@ -1471,7 +1471,7 @@
     "react-is" "^16.8.0 || ^17.0.0"
     "react-transition-group" "^4.4.0"
 
-"@material-ui/lab@*":
+"@material-ui/lab@4.0.0-alpha.57":
   "integrity" "sha512-qo/IuIQOmEKtzmRD2E4Aa6DB4A87kmY6h0uYhjUmrrgmEAgbbw9etXpWPVXuRK6AGIQCjFzV6WO2i21m1R4FCw=="
   "resolved" "https://registry.npmjs.org/@material-ui/lab/-/lab-4.0.0-alpha.57.tgz"
   "version" "4.0.0-alpha.57"
