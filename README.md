@@ -50,8 +50,7 @@
 
 You can view the live version of the app on:
 
-1. Netlify: Netlify link
-2. CodeSandbox: CodeSandbox link
+1. Netlify: https://lineupusers.netlify.app/
 
 ## Misc
 
