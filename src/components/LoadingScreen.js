@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function LoadingScreen() {
+const LoadingScreen = () => {
   const classes = useStyles();
 
   return (
@@ -23,6 +23,6 @@ function LoadingScreen() {
       </Box>
     </div>
   );
-}
+};
 
 export default LoadingScreen;

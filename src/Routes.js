@@ -23,7 +23,7 @@ const routesConfig = [
 ];
 
 // Map the routes and struture it like you usually would with react-router-dom
-function renderRoutes(routes) {
+const renderRoutes = (routes) => {
   return routes ? (
     <Suspense fallback={<LoadingScreen />}>
       <Switch>
@@ -46,10 +46,10 @@ function renderRoutes(routes) {
       </Switch>
     </Suspense>
   ) : null;
-}
+};
 
-function Routes() {
+const Routes = () => {
   return renderRoutes(routesConfig);
-}
+};
 
 export default Routes;

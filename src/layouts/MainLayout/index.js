@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function MainLayout({ children }) {
+const MainLayout = ({ children }) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -21,7 +21,7 @@ function MainLayout({ children }) {
       <Footer />
     </div>
   );
-}
+};
 
 MainLayout.propTypes = {
   children: PropTypes.any,

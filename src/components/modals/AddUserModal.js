@@ -20,11 +20,6 @@ import * as yup from 'yup';
 import { memo, useMemo } from 'react';
 import { createUser } from 'src/api/users';
 
-AddUserModal.propTypes = {
-  onCancel: PropTypes.func.isRequired,
-  onFinish: PropTypes.func.isRequired,
-};
-
 const schema = yup.object().shape({
   name: yup.string().required().trim(),
   job: yup.string().required(),
@@ -37,7 +32,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-function AddUserModal({ show, onCancel, onFinish }) {
+const AddUserModal = ({ show, onCancel, onFinish }) => {
   const classes = useStyles();
   const methods = useForm({
     resolver: yupResolver(schema),
@@ -136,6 +131,11 @@ function AddUserModal({ show, onCancel, onFinish }) {
       </Backdrop>
     </>
   );
-}
+};
+
+AddUserModal.propTypes = {
+  onCancel: PropTypes.func.isRequired,
+  onFinish: PropTypes.func.isRequired,
+};
 
 export default memo(AddUserModal);

@@ -11,15 +11,6 @@ import {
 } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
 
-UserCard.propTypes = {
-  user: PropTypes.shape({
-    id: PropTypes.number,
-    first_name: PropTypes.string,
-    last_name: PropTypes.string,
-  }).isRequired,
-  minimal: PropTypes.bool,
-};
-
 const useStyles = makeStyles((theme) => ({
   name: {
     marginTop: theme.spacing(1),
@@ -30,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function UserCard({ user, minimal }) {
+const UserCard = ({ user, minimal }) => {
   const classes = useStyles();
 
   return (
@@ -68,6 +59,15 @@ function UserCard({ user, minimal }) {
       )}
     </Card>
   );
-}
+};
+
+UserCard.propTypes = {
+  user: PropTypes.shape({
+    id: PropTypes.number,
+    first_name: PropTypes.string,
+    last_name: PropTypes.string,
+  }).isRequired,
+  minimal: PropTypes.bool,
+};
 
 export default UserCard;

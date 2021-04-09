@@ -9,7 +9,7 @@ import theme from './theme';
 
 const queryClient = new QueryClient();
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
@@ -21,6 +21,6 @@ function App() {
       </QueryClientProvider>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

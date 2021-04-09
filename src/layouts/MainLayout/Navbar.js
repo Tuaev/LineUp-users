@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ButtonAppBar() {
+const Navbar = () => {
   const classes = useStyles();
   const queryClient = useQueryClient();
   const [showUserModal, setShowUserModal] = useState(false);
@@ -74,4 +74,6 @@ export default function ButtonAppBar() {
       />
     </>
   );
-}
+};
+
+export default Navbar;
