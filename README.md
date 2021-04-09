@@ -51,6 +51,7 @@
 You can view the live version of the app on:
 
 1. Netlify: https://lineupusers.netlify.app/
+2. CodeSandbox: https://codesandbox.io/s/wispy-leftpad-my4ol
 
 ## Misc
 
